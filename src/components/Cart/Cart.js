@@ -45,7 +45,7 @@ const Cart = (props) => {
     // console.log(JSON.stringify(completeOrder));
     sendRequest(
       {
-        url: "https://react-http-hook-a2218-default-rtdb.firebaseio.com/orders.json",
+        url: process.env.REACT_APP_firebase_orders,
         method: "POST",
         body: completeOrder,
         headers: {

@@ -15,7 +15,7 @@ const AvailableMeals = () => {
     };
     getMenu(
       {
-        url: "https://react-http-hook-a2218-default-rtdb.firebaseio.com/menus.json",
+        url: process.env.REACT_APP_firebase_menus,
       },
       transformMenu
     );
